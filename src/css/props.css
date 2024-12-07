@@ -1,0 +1,21 @@
+.fixed {
+  position: fixed;
+}
+.mid {
+  align-items: center;
+}
+.gap {
+  gap: 10px;
+}
+.flex {
+  display: flex;
+}
+.black {
+  color: black;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}

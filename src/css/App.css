@@ -1,0 +1,25 @@
+.explore-topics {
+  padding: 10px;
+  margin: 30px;
+  gap: 20px;
+}
+.explore-topics .item {
+  background: #fe5a1d;
+  color: black;
+  text-align: center;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.explore-topics .item p {
+}
+.explore-topics .item a {
+  color: black;
+  text-decoration: none;
+}
+.explore-topics .item a:hover {
+}
+.explore-topics .item a:visited {
+  color: black;
+  background-color: #f0f0f0;
+}

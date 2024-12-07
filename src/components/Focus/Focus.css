@@ -1,0 +1,199 @@
+.focus-focus {
+          font-size: 20px;
+          margin: 11px 0 0 70px;
+          padding: 3px 10px;
+          color: white;
+          border: 1px solid white;
+          background-color: yellow;
+          display: inline-block;
+          border-radius: 5px;
+}
+
+.focus-topics {
+
+          display: grid;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          grid-template-columns: repeat(2, 1fr);
+          /* 2 columns, each taking 1fr */
+          margin: 10px 50px 0px;
+          padding-bottom: 40px;
+}
+
+.focus-topics div {
+          display: block;
+          cursor: pointer;
+          padding: 10px;
+          max-width: 100px;
+          min-width: 100px;
+          min-height: 100px;
+          max-height: 100px;
+          text-align: center;
+          color: black;
+          font-size: 20px;
+          border-radius: 10px;
+          position: relative;
+          background-color: yellow;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* Center horizontally and vertically */
+}
+
+.focus-topics div h1 {
+          font-size: 17px;
+          font-weight: 700;
+          color: white;
+}
+
+.focus-topics div p {
+          font-size: 10px;
+          position: absolute;
+          bottom: 2px;
+          color: white;
+          padding: 0 5px;
+}
+
+
+
+.status-bar {
+          position: relative;
+          display: flex;
+          margin: 10px 0 30px;
+}
+
+.glass-container {
+          margin: 30px auto;
+          padding: 20px;
+          position: relative;
+          background-color: rgba(135, 207, 235, 0.637);
+          text-align: center;
+          color: black;
+          min-width: 320px;
+          display: flex;
+          min-height: 360px;
+          max-width: 320px;
+          max-height: 360px;
+          flex-direction: column;
+          border-radius: 15px;
+}
+
+.glass-container .status {
+          background-color: green;
+          font-size: 10px;
+          color: #fff;
+          display: inline-block;
+          border-radius: 5px;
+          right: 0;
+          padding: 2px 5px;
+          position: absolute;
+}
+
+.glass-container .masterp {
+          color: #000;
+          font-size: 14px;
+          font-weight: 700;
+          left: 0;
+          position: absolute;
+}
+
+.glass-container .status p {
+          padding: 2px;
+}
+
+.glass-container h3 {
+          padding-left: 20px;
+          color: black;
+          font-size: 20px;
+}
+
+.glass-container .focus-item {
+          display: flex;
+          flex-direction: row;
+}
+
+.glass-container .content {
+          margin: 10px;
+          padding: 10px;
+}
+
+
+.scroll-buttons {
+          display: flex;
+          justify-content: space-between;
+          margin: -10px 150px 10px;
+}
+
+.scroll-buttons button {
+          background-color: transparent;
+          border: none;
+}
+
+.scroll-buttons img {
+          width: 30px;
+          cursor: pointer;
+}
+
+/* Focus.css */
+.scroll-container {
+          width: 100%;
+          gap: 10px;
+          margin: 0 0 0 0px;
+          overflow-x: hidden;
+          scroll-snap-type: x mandatory;
+}
+
+.scroll-content {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
+          margin: 0 auto;
+          display: block;
+          /* Adjust as needed */
+}
+
+.class-content {
+          margin: 0px;
+          padding: 15px 0;
+          background-color: yellow;
+}
+
+.class-content ul {
+          text-align: left;
+          margin: 0;
+          margin-block-end: 0;
+          margin-block-start: 0;
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+          padding: 0;
+}
+
+.class-content ul li {
+          list-style-type: none;
+          margin-bottom: 3px;
+          padding: 0 7px 3px;
+          font-size: 11px;
+          font-weight: 700;
+}
+
+.class-content ul li::before {
+          content: '';
+}
+
+.background-container {
+          background: linear-gradient(to right bottom, #221f1f, #df1414);
+          margin: 0 40px;
+          transform: skew(-45deg);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          /* Optional: Add a box shadow for depth */
+}
+
+
+
+.background-container h1 {
+          transform: skew(45deg);
+          padding: 3px;
+          font-style: italic;
+          font-size: 20px;
+          text-align: center;
+}
