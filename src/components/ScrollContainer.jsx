@@ -14,7 +14,7 @@ const ScrollContainer = () => {
             <div className="scroll-content">
                                                   <div className='glass-container' style={{ maxHeight: '300px', minHeight: '340px' }}>
                                                             <div className="focus-item" style={{ padding: '10px 10px 0 0', gap: '0px' }}>
-                                                                      <img style={{ width: '15%', height: '100%' }} src='/images/soldier.png' alt="" />
+                                                                      <img style={{ width: '15%', height: '100%' }} src='/images/soldier.png' alt="dimond"  />
                                                                       <h3 style={{ textAlign: 'left', fontSize: '17px', padding: '0px 0 0 10px' }}>DEFENCE EXAM COURSE</h3>
 
 

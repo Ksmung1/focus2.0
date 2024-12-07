@@ -5,7 +5,7 @@ import articleData from "./ArticleData";
 
 function Articles() {
           // Use state to keep track of whether to show all articles
-          const [showAllArticles, setShowAllArticles] = useState(false);
+          const showAllArticles = useState(false);
 
           // Use a variable to control how many articles to display
           const maxArticlesToShow = showAllArticles ? articleData.length : 3;

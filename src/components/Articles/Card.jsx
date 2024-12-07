@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import ArticleCards from "./ArticlesCard";
 import "./Articles.css";
 import articles from "./article";
 

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { SearchBar } from "./SearchBar/SearchBar";
-import { SearchResults } from "./SearchBar/SearchResults";
 
 function Navbar() {
           const [isActive, setIsActive] = useState(false);
-          const [results, setResults] = useState([]);
 
           const toggleMenu = () => {
                     setIsActive(!isActive);
@@ -20,7 +17,7 @@ function Navbar() {
           return (
                     <div id="Navbar">
                               <nav className="navbar">
-                                        <a href="#" className="toggle-button" onClick={toggleMenu}>
+  {/* eslint-disable-line jsx-a11y/anchor-is-valid */}                                        <a href="#" className="toggle-button" onClick={toggleMenu}>
                                                   <span className="bar"></span>
                                                   <span className="bar"></span>
                                                   <span className="bar"></span>

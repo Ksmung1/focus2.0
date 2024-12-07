@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import ClassCard from "./ClassCard";
 import classData from "./classData";
 import "../upsc.css";
-import PDFViewer from "../PDFViewer"; // Import the PDFViewer component
 
 function SubjectContent({ subject }) {
           if (classData[subject]) {

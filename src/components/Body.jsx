@@ -2,15 +2,6 @@ import React, { useState } from "react";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { SearchResults } from "./SearchBar/SearchResults";
 import HomepageShortCuts from "./HomePageShortCutsFolder/HomepageShortCuts";
-import Boosters from "./Booster/Boosters";
-import Articles from "./Articles/Articles";
-import Testimonials from "./Testimonials/Testimonials";
-import FocusTable from "./FocusTable/FocusTable";
-import HomepageExams from "./HomepageExams/HomeExams";
-import ExamTable from "./ExamTable/ExamTable";
-import Focus from "./Focus/Focus"
-import Advertisements from "./Advertisements/Advertisement";
-import { useNavigate } from "react-router-dom";
 import ScrollContainer from "./ScrollContainer";
 
 function Body() {
@@ -73,7 +64,7 @@ function Body() {
                                         </table>
                               </div>
                               <div className="explore-exams">
-                                        <img style={{width: '100%', margin: '50px 0 10px'}} src={`${process.env.PUBLIC_URL}/images/image.png`} alt="" />
+                                        <img style={{width: '100%', margin: '50px 0 10px'}} src={`${process.env.PUBLIC_URL}/images/image.png`} alt="dimond"  />
                               {/* <Focus></Focus> */}
 
                                         {/* <Advertisements /> */}
@@ -86,7 +77,7 @@ function Body() {
                               </div>
                               <div className="contacts">
 
-                                        <p><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="" /></a></p>
+                                        <p><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="dimond"  /></a></p>
                                         <h1 style={{ marginBottom: '30px', fontSize: '16px', color: 'black' }}>Made with ❤️ by Nextjourney</h1>
                                         <h5 style={{ background: '#fe5a1d', margin: ' 0 0 -10px 0', padding: '10px' }}>Copyright © Focus</h5>
                               </div>

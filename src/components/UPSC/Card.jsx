@@ -5,7 +5,7 @@ function Card(props) {
           return (
                     <Link style={{ textDecoration: 'none' }} to={props.link}>
                               <div className="exam-card">
-                                        <img src={props.emoji} />
+                                        <img src={props.emoji} alt="dimond" />
                                         <h2>{props.subject}</h2>
                               </div>
                     </Link>

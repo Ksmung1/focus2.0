@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Card(props) {
           return (
                     <div className="homeExams-card">
                               <div className="img-container">
-                                        <img src={props.img} />
+                                        <img src={props.img} alt="dimond"  />
                               </div>
                               <div className="card-info">
                                         <h1>{props.name}</h1>

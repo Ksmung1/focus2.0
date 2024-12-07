@@ -27,7 +27,7 @@ function NextJourney() {
                                         NextJourney
                               </h1>
                               <h3 style={{ margin: '10px 0', fontSize: '15px', textAlign: 'center', wordSpacing: '2px', }}>We Build Top Projects</h3>
-                              <p style={{ textAlign: 'center' }}><img src="images/lab-equipment.png" style={{ width: '30px', marginRight: '20px', marginTop: '50px', textAlign: 'center' }} /></p>
+                              <p style={{ textAlign: 'center' }}><img src="images/lab-equipment.png" style={{ width: '30px', marginRight: '20px', marginTop: '50px', textAlign: 'center' }} alt="dimond"  /></p>
                               <h6 style={{ textAlign: 'center', }}>Laboratory</h6>
 
                               <div style={{ display: 'flex', margin: '50px', gap: '10px' }}>

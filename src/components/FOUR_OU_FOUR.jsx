@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 
 function FOUR_OU_FOUR() {
           const navigate = useNavigate();
@@ -14,7 +14,7 @@ function FOUR_OU_FOUR() {
                                         <h2>Oops! Even John Travolta can't find your webpage!</h2>
                                         <button onClick={goBack}>Go Back</button>
                                         <div className="image-container">
-                                                  <img src="/images/Ll3eKQ-unscreen.gif" alt="" />
+                                                  <img src="/images/Ll3eKQ-unscreen.gif" alt="dimond"  />
                                         </div>
                               </div>
                     </div>

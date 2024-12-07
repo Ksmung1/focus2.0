@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import './HomePageShortCuts.css'
 import Card from "./Card";
-import DigitalClock from "../Calendar/Clock";
-import MyCalendar from "../Calendar/Calendar";
-import Quotes from "../DailyQuotes/Quote";
 
 function HomepageShortCuts() {
 
@@ -19,17 +15,8 @@ function HomepageShortCuts() {
                     { link: "/careerGuidance", emoji: "🚀 ", img: "./images/personalitydev.png", paragraph: "Career Guidance", cardColor: 'card8', },
           ];
 
-          const [openCardIndex, setOpenCardIndex] = useState(null);
+          const openCardIndex = useState(null);
 
-          const handleCardClick = (index) => {
-                    if (openCardIndex === index) {
-                              // If the same card is clicked again, close it
-                              setOpenCardIndex(null);
-                    } else {
-                              // If a different card is clicked, open it and close the previously open one
-                              setOpenCardIndex(index);
-                    }
-          };
 
           return (
                     <div className="homepage-shortcut">

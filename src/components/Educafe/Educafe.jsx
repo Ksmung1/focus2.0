@@ -98,11 +98,11 @@ function Educafe() {
                     <div className="educafe">
                               <div className="heading">
                                         <h1>EDUCAFE</h1>
-                                        <Link to='/focusApp'><img src="./images/diamond.gif" alt="" /></Link>
-                                        <a href='/' ><img src="./images/kpop.gif" style={{ marginRight: '80px' }} alt="" /></a>
-                                        <a href="./images/educafe.jpg"><img src="./images/coffee-cup.gif" style={{ marginRight: '40px' }} alt="" /></a>
+                                        <Link to='/focusApp'><img src="./images/diamond.gif" alt="dimonf" /></Link>
+                                        <a href='/' ><img src="./images/kpop.gif" style={{ marginRight: '80px' }} alt="dimond" /></a>
+                                        <a href="./images/educafe.jpg"><img src="./images/coffee-cup.gif" style={{ marginRight: '40px' }} alt="dimond" /></a>
                               </div>
-                              <img src="./images/educafe-bg.jpg" alt="" />
+                              <img src="./images/educafe-bg.jpg" alt="dimond"  />
                               <p>The perfect study environment with all the latest and modern facilities. A calm environment for aspirants.</p>
                               <p style={{ fontStyle: 'italic' }}>For those students preparing for UPSC, Regulatory-RBI, NABARD, SEBI, CA, MBA, SSC, Banking, JEE, NEET-UG & PG, NDA, CDS, School & College Exams, etc.</p>
                               <div className="educafe-slider" ref={sliderRef} onScroll={handleSliderScroll}>
@@ -136,10 +136,10 @@ function Educafe() {
                               <div className="educafe-foot">
                                         <div className="contacts">
                                                   <ul>
-                                                            <li><a href="https://maps.app.goo.gl/Q1V6WNUeQeTSR5oY6"><img src="./images/map.png" alt="" /></a></li>
-                                                            <li><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="" /></a></li>
-                                                            <li><a href="https://www.instagram.com/123"><img src="./images/instagram.png" alt="" /></a></li>
-                                                            <li><a href="https://t.me/educafe"><img src="./images/telegram.png" alt="" /></a></li>
+                                                            <li><a href="https://maps.app.goo.gl/Q1V6WNUeQeTSR5oY6"><img src="./images/map.png" alt="dimond"  /></a></li>
+                                                            <li><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="dimond"  /></a></li>
+                                                            <li><a href="https://www.instagram.com/123"><img src="./images/instagram.png" alt="dimond" /></a></li>
+                                                            <li><a href="https://t.me/educafe"><img src="./images/telegram.png" alt="dimond"  /></a></li>
                                                   </ul>
                                         </div>
                               </div>

@@ -5,7 +5,7 @@ function Card(props) {
           return (
                     <div className="scroll-card-adv">
                               <Link to={props.link}>
-                                        <img src={props.img} alt="" />
+                                        <img src={props.img} alt="card-img" />
                               </Link>
                     </div>
           )

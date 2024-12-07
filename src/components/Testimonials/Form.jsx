@@ -7,7 +7,7 @@ function Form(props) {
                               <div className="testimonials">
                                         <div className="testis">
                                                   <div className="img-container">
-                                                            <img src={props.img} />
+                                                            <img src={props.img} alt="dimond" />
                                                   </div>
                                                   <div className="testimonial-details">
                                                             <div className="personal">

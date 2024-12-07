@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Card(props) {
           return (
                     <div className="div">
-                              <div className="img-container"><img src={props.img} /></div>
+                              <div className="img-container"><img src={props.img} alt="dimond"  /></div>
 
                               <Link to={props.link} style={{
                                         textDecoration: 'none'
