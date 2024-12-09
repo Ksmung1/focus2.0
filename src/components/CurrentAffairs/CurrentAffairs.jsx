@@ -4,7 +4,7 @@ import "./CurrentAffairs.css";
 
 function CurrentAffairs() {
           const months = ['October', 'September', 'August', 'July', 'June', 'May', 'April', 'March', 'February', 'January'];
-          const [selectedMonth, setSelectedMonth] = useState(null);
+          const setSelectedMonth= useState(null);
           const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
           const navigate = useNavigate();
 

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .explore-topics {
   padding: 10px;
   margin: 30px;
@@ -6,8 +9,9 @@
 .explore-topics .item {
   background: #fe5a1d;
   color: black;
-  text-align: center;
+  text-align: left;
   width: 250px;
+  padding: 3px 20px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -22,4 +26,257 @@
 .explore-topics .item a:visited {
   color: black;
   background-color: #f0f0f0;
+}
+
+.scroll-container {
+  background: #00ccff;
+  padding: 10px;
+}
+.scroll-container .class-content ul {
+  list-style-type: none;
+}
+.scroll-container .status-bar p:nth-child(3) {
+  background: green;
+  width: 10px;
+  color: green;
+  height: 10px;
+  border-radius: 100%;
+}
+.scroll-container .class-content ul {
+  margin: 0;
+}
+.dec-titles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Spacing between items */
+  margin: 20px;
+}
+
+.dec-titles button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dec-titles li {
+  list-style: none;
+  margin: 0;
+}
+
+/* Available courses container */
+.available-course {
+  text-align: center;
+}
+
+.available-course h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #fe5a1d;
+}
+
+/* Flex container for course options */
+.course-options {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap items to the next row if necessary */
+  margin-top: 30px;
+}
+
+/* Individual course options */
+.course-opts {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  width: 45%; /* Make items take 45% of the available width */
+}
+
+/* Course item (Class X, NDA, etc.) */
+.course-opts .item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  padding: 25px 10px 10px;
+  margin: 10px 0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Neon glow effect for ongoing */
+.course-opts .item.ongoing {
+  animation: neon-green-border 2s linear infinite;
+  background: #98fb98;
+}
+
+.course-opts .item.ongoing::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid #00ff6a; /* Glowing green */
+  border-radius: 10px;
+  animation: glowing-green 2s linear infinite;
+  pointer-events: none;
+}
+
+/* Neon glow effect for coming soon */
+.course-opts .item.coming-soon {
+  animation: neon-yellow-border 2s linear infinite;
+  background: #ffb95c;
+}
+
+.course-opts .item.coming-soon::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid #ffcc00; /* Glowing yellow */
+  border-radius: 10px;
+  animation: glowing-yellow 2s linear infinite;
+  pointer-events: none;
+}
+
+/* Keyframes for glowing effect */
+@keyframes glowing-green {
+  0% {
+    box-shadow: 0 0 5px #00ff6a, 0 0 10px #00ff6a, 0 0 20px #00ff6a;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ff6a, 0 0 30px #00ff6a, 0 0 40px #00ff6a;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ff6a, 0 0 10px #00ff6a, 0 0 20px #00ff6a;
+  }
+}
+
+@keyframes glowing-yellow {
+  0% {
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  }
+  50% {
+    box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+  }
+  100% {
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  }
+}
+
+/* Status badge styling */
+.status-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.ongoing-badge {
+  background-color: #28a745;
+  border: 1px solid black;
+  color: black;
+  /* Green for ongoing */
+}
+
+.coming-soon-badge {
+  background-color: #ffc107;
+  border: 1px solid black;
+  color: black;
+  /* Yellow for coming soon */
+}
+
+/* Hover effect */
+.course-opts .item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease;
+}
+
+/* Explore exams section */
+.explore-exams {
+  margin: 20px 20px 50px;
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.explore-exams img {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Footer contacts section */
+.contacts {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contacts p {
+  margin-bottom: 10px;
+}
+
+.contacts a img {
+  width: 40px; /* Adjust WhatsApp icon size */
+}
+
+.contacts h1 {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: black;
+}
+
+.contacts h5 {
+  background: #fe5a1d;
+  margin: 0 0 -10px 0;
+  padding: 10px;
+}
+.educafe-link {
+  color: black;
+  margin: 20px;
+}
+.educafe-link h1 {
+  font-size {
+  }
+}
+.educafe-link .info {
+  background-color: rgba(
+    0,
+    255,
+    0,
+    0.1
+  ); /* Green background with transparency */
+  border: 2px solid rgba(0, 255, 0, 0.8); /* Solid neon green border */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5); /* Neon green glow effect */
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+.educafe-link .info h1 {
+  font-size: 20px;
+}
+.educafe-link .info p {
+  margin: 0;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+.educafe-link .info button {
+  margin: 20px 0 0;
 }

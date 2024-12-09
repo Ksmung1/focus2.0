@@ -5,7 +5,7 @@ function ExamCard(props) {
           return (
                     <div className="EXAM-details">
                               <h1 style={{ color: 'black', fontSize: '24px', fontWeight: '800', margin: '0px 0 20px' }}>{props.title}</h1>
-                              <img src={props.img} alt="image"/>
+                              <img src={props.img} alt="defenceimage"/>
                               <div className="pbox">
                                         <table className="exam-info-table">
                                                   <tbody>

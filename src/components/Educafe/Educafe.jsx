@@ -47,7 +47,7 @@ function Educafe() {
                     videoRefs.current = videoRefs.current.slice(0, slides.length);
                     // Play the video of the current slide when the component mounts
                     playCurrentVideo(currentSlide);
-          }, []);
+          });
 
           const changeSlide = (slideIndex) => {
                     if (slideIndex >= 0 && slideIndex < slides.length) {

@@ -6,25 +6,21 @@ const ScrollContainer = () => {
 
     return (
         <div
-            className="scroll-container"
-            onClick={() => {
-                navigate('/dec');
-            }}
-        >
+            className="scroll-container" style={{margin: '20px', borderRadius: '20px'}}>
             <div className="scroll-content">
-                                                  <div className='glass-container' style={{ maxHeight: '300px', minHeight: '340px' }}>
+                                                  <div className='glass-container' >
                                                             <div className="focus-item" style={{ padding: '10px 10px 0 0', gap: '0px' }}>
-                                                                      <img style={{ width: '15%', height: '100%' }} src='/images/soldier.png' alt="dimond"  />
-                                                                      <h3 style={{ textAlign: 'left', fontSize: '17px', padding: '0px 0 0 10px' }}>DEFENCE EXAM COURSE</h3>
+                                                                      <img style={{ width: '35%', height: '100%' }} src='/images/soldier.png' alt="dimond"  />
+                                                                      <h3 style={{ textAlign: 'left', fontSize: '17px', padding: '0px 0 0 10px' }}>NDA EXAM COURSE</h3>
 
 
                                                             </div>
                                                             <div className="status-bar">
+                                                               
                                                                       <p className="masterp">Foundation</p>
-
+                                                                
                                                                       <p className="status">Status: Ongoing</p>
-
-                                                                      <p></p>
+                                                                
                                                             </div>
                                                             <div>
                                                                       <p>
@@ -39,7 +35,7 @@ const ScrollContainer = () => {
                               </ul>
                     </div>
                                                                       </p>
-                                                                      <button>Explore</button>
+                                                                     
                                                             </div>
                         
 

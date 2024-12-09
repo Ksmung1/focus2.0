@@ -32,6 +32,9 @@ import CourseProgress from "./CoursePages/CourseProgress";
 import CourseSyllabus from "./CoursePages/CourseSyllabus";
 import CoursePattern from "./CoursePages/CoursePattern";
 
+//css
+import "../css/App.css";
+import "../css/props.css";
 
 function App() {
           return (
