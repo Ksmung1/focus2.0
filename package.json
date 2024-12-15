@@ -20,6 +20,7 @@
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
     "axios": "^1.5.1",
+    "css-what": "^5.1.0",
     "date-fns": "^4.1.0",
     "firebase": "^11.1.0",
     "ionicons": "^7.1.2",
@@ -39,20 +40,21 @@
     "web-vitals": "^4.2.4",
     "webpack": "^5.97.1"
   },
+  "resolutions": {
+    "css-what": "^5.1.0",
+    "postcss": "^8.4.49"
+  },
   "overrides": {
-    "css-select": "^3.1.0",
+    "css-select": "^3.1",
     "svgo": "^1.3.2"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "resolutions": {
-  "postcss": "^8.4.31"
-}
-,
   "eslintConfig": {
     "extends": [
       "react-app",
