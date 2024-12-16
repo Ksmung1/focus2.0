@@ -20,7 +20,7 @@
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
     "axios": "^1.5.1",
-    "css-what": "^6.1.0",
+    "css-what": "^5.1.0",
     "date-fns": "^4.1.0",
     "firebase": "^11.1.0",
     "ionicons": "^7.1.2",
@@ -41,7 +41,7 @@
     "webpack": "^5.97.1"
   },
   "resolutions": {
-    "css-what": "^6.1.0",
+    "css-what": "^5.1.0",
     "postcss": "^8.4.49"
   },
   "overrides": {
