@@ -67,10 +67,10 @@ function Body() {
                                         </table> */}
                                         <div className="course-options flex mid gap">
                                                   <div className="course-opts">
-                                                  <div className="item coming-soon">
+                                                  <div className="item ongoing">
                                                             Class X
                                                             <p>40 days Exam Booster Course ㅤ</p>
-                                                            <span className="status-badge coming-soon-badge">Starting soon</span>
+                                                            <span className="status-badge ongoing-badge">Ongoing</span>
                                                   </div>
                                                   <div className="item ongoing" onClick={()=>{navigate('/dec')}}>
                                                   NDA
