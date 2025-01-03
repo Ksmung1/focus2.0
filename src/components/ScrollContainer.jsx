@@ -1,8 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const ScrollContainer = () => {
-    const navigate = useNavigate();
 
     return (
         <div

@@ -98,7 +98,7 @@ function Body() {
                               </div>
                               <div className="flex mid gap" style={{margin: '20px 20px 0'}}>
                                         <img src={`${process.env.PUBLIC_URL}/images/fire.gif`} alt="" />
-                              <h1 style={{color: 'black', fontSize: '26px',color: '#fe5a1d', fontWeight: '800' }}>UPCOMING EVENTS</h1>
+                              <h1 style={{ fontSize: '26px',color: '#fe5a1d', fontWeight: '800' }}>UPCOMING EVENTS</h1>
 
                               </div>
                               <div className="explore-exams">
