@@ -65,6 +65,7 @@ body {
   z-index: 10;
   display: flex;
   background-color: black;
+  color: white;
 }
 
 .navbar-links li {

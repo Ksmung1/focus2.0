@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+body {
+  background: black;
+  color: white;
+}
 .explore-topics {
   padding: 10px;
   margin: 30px;
@@ -18,13 +22,13 @@
 .explore-topics .item p {
 }
 .explore-topics .item a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .explore-topics .item a:hover {
 }
 .explore-topics .item a:visited {
-  color: black;
+  color: white;
   background-color: #f0f0f0;
 }
 
@@ -103,7 +107,7 @@
   border: 2px solid #000;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #000;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
@@ -244,7 +248,7 @@
   padding: 10px;
 }
 .educafe-link {
-  color: black;
+  color: white;
   margin: 20px;
 }
 .educafe-link h1 {
@@ -264,7 +268,7 @@
   margin: 20px auto;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5); /* Neon green glow effect */
-  color: black;
+  color: white;
   font-size: 18px;
   text-align: center;
 }
@@ -279,4 +283,16 @@
 }
 .educafe-link .info button {
   margin: 20px 0 0;
+}
+
+.navbar {
+  color: white;
+  background: black;
+}
+..bar {
+  color: black;
+}
+.toggle-button {
+  background: white;
+  color: black;
 }

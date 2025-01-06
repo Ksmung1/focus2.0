@@ -26,7 +26,7 @@ function Navbar() {
                                                   <ul>
                                                             <button style={{ fontSize: '27px', cursor: 'pointer', maxWidth: '40px', minHeight: '40px' }} onClick={closeMenu}>x</button>
                                                             <p></p>
-                                                            <p><input type="text" placeholder="Search" style={{ backgroundColor: 'white', width: '200px', border:'1px solid black' }} /></p>
+                                                            <p><input type="text" placeholder="Search" style={{ backgroundColor: 'black', width: '200px', border:'1px solid white' }} /></p>
 
                                                             <li><Link to="/">Home</Link></li>
                                                             <li><Link to="/upExams">Upcoming Exams</Link></li>

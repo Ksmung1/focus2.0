@@ -13,13 +13,13 @@ function Body() {
                     <div className="Body">
                               <img src={`${process.env.PUBLIC_URL}/images/target.gif`} alt="target" style={{margin: '80px 0 0 0'}} />
                               <h1 style={{ fontSize: '40px', fontWeight: '800', marginTop: '10px', marginBottom: '0', color: '#fe5a1d' }}>FOCUS</h1>
-                              <p style={{color: 'black', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '4.7px'}}>all or nothing</p>
+                              <p style={{color: 'white', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '4.7px'}}>all or nothing</p>
                               <div className="search-bar-container">
                                         <SearchBar setResults={setResults} />
                                         <SearchResults results={results} />
                               </div>
                               <HomepageShortCuts />
-                              <div style={{color: '#000', textAlign:'left', padding: '20px'}}>
+                              <div style={{color: '#fff', textAlign:'left', padding: '20px'}}>
                                         <h1 style={{fontSize: '30px', fontWeight:'900', color: '#fe5a1d', fontFamily: 'serif'}}>Toppers` Choice</h1>
                                         <p className="courier-prime"><strong>Systematize</strong> your exam preparations, learn new <strong>tips and tricks</strong> and <strong>boost</strong> your <strong>productivity.</strong> At FOCUS, we help you <strong>PLAN, LEARN</strong> and <strong>ACCOMPLISH</strong> more in less time</p>
                               </div>
@@ -79,10 +79,10 @@ function Body() {
                                                   </div>
                                                   </div>
                                                   <div className="course-opts">
-                                                  <div className="item coming-soon">
+                                                  <div className="item ongoing">
                                                             Class XII
                                                             <p>40 days Exam Booster Course</p>
-                                                            <span className="status-badge coming-soon-badge">Starting soon</span>
+                                                            <span className="status-badge ongoing-badge">Ongoing</span>
 
                                                   </div>
                                                   <div className="item coming-soon">
@@ -129,7 +129,7 @@ function Body() {
                               <div className="contacts">
 
                                         <p><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="dimond"  /></a></p>
-                                        <h1 style={{ marginBottom: '30px', fontSize: '16px', color: 'black' }}>Made with ❤️ by Nextjourney</h1>
+                                        <h1 style={{ marginBottom: '30px', fontSize: '16px', color: 'white' }}>Made with ❤️ by Nextjourney</h1>
                                         <h5 style={{ background: '#fe5a1d', margin: ' 0 0 -10px 0', padding: '10px' }}>Copyright © Focus</h5>
                               </div>
                     </div>
