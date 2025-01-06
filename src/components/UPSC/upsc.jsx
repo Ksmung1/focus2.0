@@ -25,7 +25,7 @@ function Upsc() {
                               ) : (
                                         // Render the content when isLoading becomes false
                                         <>
-                                                  <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: 'blue' }}>NCERT</h1>
+                                                  <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: '#fe5a1d' }}>NCERT</h1>
                                                   <div className="exam-card-container">
                                                             {subjectData.map((subjectData, index) => (
                                                                       <Card

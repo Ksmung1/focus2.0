@@ -13,7 +13,7 @@ function Body() {
                     <div className="Body">
                               <img src={`${process.env.PUBLIC_URL}/images/target.gif`} alt="target" style={{margin: '80px 0 0 0'}} />
                               <h1 style={{ fontSize: '40px', fontWeight: '800', marginTop: '10px', marginBottom: '0', color: '#fe5a1d' }}>FOCUS</h1>
-                              <p style={{color: 'white', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '4.7px'}}>all or nothing</p>
+                              <p style={{color: 'white', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '2px'}}>all or nothing</p>
                               <div className="search-bar-container">
                                         <SearchBar setResults={setResults} />
                                         <SearchResults results={results} />

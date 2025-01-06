@@ -13,7 +13,7 @@ function News() {
                     <div>
 
                               <div style={{ margin: '50px 30px' }}>
-                                        <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: 'blue' }}>NEWSPAPERS</h1>
+                                        <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: '#fe5a1d' }}>NEWSPAPERS</h1>
                                         <div className="exam-card-container">
                                                   {newsData.map((newsData, index) => (
                                                             <Card
@@ -26,7 +26,7 @@ function News() {
                                         </div>
 
                                         <div style={{ marginTop: '50px' }}>
-                                                  <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: 'blue' }}>EDITORIAL</h1>
+                                                  <h1 style={{ fontSize: "27px", fontWeight: '800', textAlign: "center", color: '#fe5a1d' }}>EDITORIAL</h1>
                                                   <Link to='/soon'><button style={{ padding: '  20px', width: '130px', height: '100px', fontSize: '15px', margin: '0 auto', display: 'block', backgroundColor: 'white', border: '1px solid white', borderRadius: '5px', fontWeight: '700' }}>The Hindu Editorial</button></Link>
                                         </div>
                               </div>

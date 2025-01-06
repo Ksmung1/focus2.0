@@ -66,7 +66,7 @@ function App() {
         <Route path="/pdf-viewer/:classname" element={<PDFViewer />} />
         <Route path="/upExams" element={<UpExams />} />
         <Route path="/ab" element={<About />} />
-        <Route path="/soon" element={<div style={{ margin: '100px' }}> <h1 style={{ fontSize: '30px', color: 'black' }}>COMING SOON</h1></div>} />
+        <Route path="/soon" element={<div style={{ margin: '100px' }}> <h1 style={{ fontSize: '30px', color: '#fe5a1d' }}>COMING SOON</h1></div>} />
         <Route path="/core-elements" element={<CourseElement/>}></Route>
         <Route path="/course-roadmap" element={<CourseRoadmap/>}></Route>
         <Route path="/course-progress" element={<CourseProgress/>}></Route>

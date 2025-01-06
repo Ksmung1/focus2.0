@@ -1,33 +1,28 @@
 /* ExamTable.css */
 
 .exam-table {
-          border-collapse: collapse;
-          width: 100%;
-          color: black;
-          background-color: #fff;
-          border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+  background-color: #fff;
+  border: 1px solid;
 }
 
 .exam-table th {
-          color: blue;
-          border: 1px solid black;
-          padding: 10px 5px;
-
+  color: #fe5a1d;
+  border: 1px solid black;
+  padding: 10px 5px;
 }
 
 .exam-table td {
-          border-right: 1px solid black;
-          border-left: 1px solid black;
-          padding: 10px 5px;
-
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px 5px;
 }
 
-
-
-
 .link-style {
-          text-align: center;
-          color: blue;
-          cursor: pointer;
-          padding: 2px 1px;
+  text-align: center;
+  color: #fe5a1d;
+  cursor: pointer;
+  padding: 2px 1px;
 }
