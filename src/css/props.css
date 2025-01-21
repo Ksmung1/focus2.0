@@ -5,6 +5,7 @@
 }
 .mid {
   align-items: center;
+  text-align: center;
 }
 .gap {
   gap: 10px;
@@ -30,4 +31,12 @@
   font-family: "Comic Neue", cursive;
   font-weight: 300;
   font-style: normal;
+}
+
+.head-font {
+  fontsize: 40px;
+  fontweight: 800;
+  margintop: 10px;
+  marginbottom: 0;
+  color: #fe5a1d;
 }

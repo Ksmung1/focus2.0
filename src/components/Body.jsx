@@ -3,6 +3,10 @@ import { SearchBar } from "./SearchBar/SearchBar";
 import { SearchResults } from "./SearchBar/SearchResults";
 import HomepageShortCuts from "./HomePageShortCutsFolder/HomepageShortCuts";
 import { useNavigate } from "react-router-dom";
+import GoalDigger from "./GoalDigger";
+import PhotoGallery from "./PhotoGallery";
+import Slider from "./Slider";
+import Founder from "./Founder";
 
 function Body() {
           const navigate = useNavigate();
@@ -13,16 +17,12 @@ function Body() {
                     <div className="Body">
                               <img src={`${process.env.PUBLIC_URL}/images/target.gif`} alt="target" style={{margin: '80px 0 0 0'}} />
                               <h1 style={{ fontSize: '40px', fontWeight: '800', marginTop: '10px', marginBottom: '0', color: '#fe5a1d' }}>FOCUS</h1>
-                              <p style={{color: 'white', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '2px'}}>all or nothing</p>
+                              <p style={{color: 'white', margin: '0 0 30px 0 ', fontWeight: 10, letterSpacing: '2px'}}>next generation</p>
                               <div className="search-bar-container">
                                         <SearchBar setResults={setResults} />
                                         <SearchResults results={results} />
                               </div>
                               <HomepageShortCuts />
-                              <div style={{color: '#fff', textAlign:'left', padding: '20px'}}>
-                                        <h1 style={{fontSize: '30px', fontWeight:'900', color: '#fe5a1d', fontFamily: 'serif'}}>Toppers` Choice</h1>
-                                        <p className="courier-prime"><strong>Systematize</strong> your exam preparations, learn new <strong>tips and tricks</strong> and <strong>boost</strong> your <strong>productivity.</strong> At FOCUS, we help you <strong>PLAN, LEARN</strong> and <strong>ACCOMPLISH</strong> more in less time</p>
-                              </div>
                               <div className="available-course">
                                         <h1>AVAILABLE COURSES</h1>
                                         {/* <table>
@@ -66,44 +66,45 @@ function Body() {
                                                   </tbody>
                                         </table> */}
                                         <div className="course-options flex mid gap">
-                                                  <div className="course-opts">
-                                                  <div className="item ongoing">
+                                                  <div className="item ongoing" onClick={()=> {navigate('/classx')}}>
                                                             Class X
-                                                            <p>40 days Exam Booster Course ㅤ</p>
-                                                            <span className="status-badge ongoing-badge">Ongoing</span>
+                                                            {/* <span className="status-badge ongoing-badge">Ongoing</span> */}
+                                                  </div>
+                                                  <div className="item ongoing" onClick={()=> {navigate('/classxii')}}>
+                                                            ClassXII
+
+                                                  </div>
+                                                  <div className="item ongoing" onClick={()=> {navigate('/neet')}}>
+                                                            NEET
+
                                                   </div>
                                                   <div className="item ongoing" onClick={()=>{navigate('/dec')}}>
-                                                  NDA
-                                                  <p>6 Months Foundation Course</p>
-                                                  <span className="status-badge ongoing-badge">Ongoing</span>
+                                                  Defence
                                                   </div>
-                                                  </div>
-                                                  <div className="course-opts">
-                                                  <div className="item ongoing">
-                                                            Class XII
-                                                            <p>40 days Exam Booster Course</p>
-                                                            <span className="status-badge ongoing-badge">Ongoing</span>
-
-                                                  </div>
-                                                  <div className="item coming-soon">
-                                                            NEET
-                                                            <p>40 days Exam Booster Course ㅤ</p>
-                                                            <span className="status-badge coming-soon-badge">Starting soon</span>
-
-                                                  </div>
-                                                  </div>
+                             
+         
+                                                  
                                                 
                                                  
                                         </div>
                               </div>
-                              <div className="flex mid gap" style={{margin: '20px 20px 0'}}>
+
+                              <PhotoGallery />
+
+                              <div style={{color: '#fff', textAlign:'left', padding: '20px'}}>
+                                        <h1 style={{fontSize: '30px', fontWeight:'900',textAlign:'center', color: '#fe5a1d', fontFamily: 'serif'}}>Toppers` Choice</h1>
+                                        <p className="courier-prime"><strong>Systematize</strong> your exam preparations, learn new <strong>tips and tricks</strong> and <strong>boost</strong> your <strong>productivity.</strong> At FOCUS, we help you <strong>PLAN, LEARN</strong> and <strong>ACCOMPLISH</strong> more in less time</p>
+                              </div>
+                              
+                              <Slider></Slider>
+                              {/* <div className="flex mid gap" style={{margin: '20px 20px 0'}}>
                                         <img src={`${process.env.PUBLIC_URL}/images/fire.gif`} alt="" />
                               <h1 style={{ fontSize: '26px',color: '#fe5a1d', fontWeight: '800' }}>UPCOMING EVENTS</h1>
 
-                              </div>
+                              </div> */}
                               <div className="explore-exams">
                                        
-                                        <img style={{width: '100%', }} src={`${process.env.PUBLIC_URL}/images/image.png`} alt="dimond"  />
+                                        {/* <img style={{width: '100%', }} src={`${process.env.PUBLIC_URL}/images/image.png`} alt="dimond"  /> */}
                               {/* <Focus></Focus> */}
 
                                         {/* <Advertisements /> */}
@@ -114,6 +115,31 @@ function Body() {
 
                                    
                               </div>
+                              {/* <div className="deepfocus-link">
+                              <div className="info">
+                                                  <div className="flex mid">
+
+                                                  </div>
+                                                  <img src={`${process.env.PUBLIC_URL}/images/target.gif`} alt="" />
+                                        <h1>DEEP FOCUS</h1>
+
+                                        <p onClick={() => window.location.href = 'https://.netlify.app/'}>Increase your Productivity by mastering Time Management</p>
+                                        <button onClick={()=>{window.location.href = 'https://.netlify.app/'}}>Visit</button>
+                                        </div>
+                              </div> */}
+                              <GoalDigger></GoalDigger>
+                              {/* <div className="goaldigger-link">
+                              <div className="info">
+                                                  <div className="flex mid">
+
+                                                  </div>
+                                                  <img src={`${process.env.PUBLIC_URL}/images/rating.png`} alt="" />
+                                        <h1>GOAL DIGGER</h1>
+
+                                        <p onClick={() => window.location.href = 'https://.netlify.app/'}>Current Affairs for Aspirants - By Aspirants</p>
+                                        <button onClick={()=>{window.location.href = 'https://.netlify.app/'}}>Visit</button>
+                                        </div>
+                              </div> */}
                               <div className="educafe-link">
                                         <div className="info">
                                                   <div className="flex mid">
@@ -126,6 +152,11 @@ function Body() {
                                         <button onClick={()=>{window.location.href = 'https://edu-cafe.netlify.app/'}}>Visit</button>
                                         </div>
                               </div>
+
+                              <div style={{margin: '70px 20px'}}>
+                              <img style={{width:'100%',border: '1px solid red'}} src="/images/WhatsApp Image 2025-01-21 at 23.19.31_41e6be10.jpg" alt="" />
+                              </div>
+                              <Founder></Founder>
                               <div className="contacts">
 
                                         <p><a href="https://wa.me/918974808279"><img src="./images/whatsapp.png" alt="dimond"  /></a></p>

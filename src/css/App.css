@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background: black;
+  background: #1f1f1f;
   color: white;
 }
 .explore-topics {
@@ -74,9 +74,9 @@ body {
 }
 
 .available-course h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #fe5a1d;
 }
 
@@ -87,23 +87,14 @@ body {
   justify-content: space-between; /* Distribute items evenly */
   gap: 20px;
   flex-wrap: wrap; /* Wrap items to the next row if necessary */
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
-/* Individual course options */
-.course-opts {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  width: 45%; /* Make items take 45% of the available width */
-}
-
-/* Course item (Class X, NDA, etc.) */
-.course-opts .item {
+.course-options .item {
   position: relative;
   flex: 1;
   text-align: center;
-  padding: 25px 10px 10px;
-  margin: 10px 0;
+  padding: 10px;
   border: 2px solid #000;
   border-radius: 10px;
   cursor: pointer;
@@ -113,31 +104,31 @@ body {
 }
 
 /* Neon glow effect for ongoing */
-.course-opts .item.ongoing {
-  animation: neon-green-border 2s linear infinite;
+.course-options .item.ongoing {
+  /* animation: neon-green-border 2s linear infinite; */
   background: #98fb98;
 }
 
-.course-opts .item.ongoing::before {
+.course-options .item.ongoing::before {
   content: "";
   position: absolute;
   top: -5px;
   left: -5px;
   right: -5px;
   bottom: -5px;
-  border: 2px solid #00ff6a; /* Glowing green */
+  border: 1px solid #00ff6a;
   border-radius: 10px;
-  animation: glowing-green 2s linear infinite;
+  /* animation: glowing-green 2s linear infinite; */
   pointer-events: none;
 }
 
 /* Neon glow effect for coming soon */
-.course-opts .item.coming-soon {
+.course-options .item.coming-soon {
   animation: neon-yellow-border 2s linear infinite;
   background: #ffb95c;
 }
 
-.course-opts .item.coming-soon::before {
+.course-options .item.coming-soon::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -287,7 +278,7 @@ body {
 
 .navbar {
   color: white;
-  background: black;
+  background: inherit;
 }
 ..bar {
   color: black;
@@ -295,4 +286,171 @@ body {
 .toggle-button {
   background: white;
   color: black;
+}
+
+.goaldigger-link {
+  color: white;
+  margin: 0 20px 80px;
+}
+.goaldigger-link .info {
+  background-color: rgba(
+    255,
+    215,
+    0,
+    0.1
+  ); /* Golden background with transparency */
+  border: 2px solid rgba(255, 215, 0, 0.8); /* Solid gold border */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 223, 0, 0.9); /* Golden glow effect */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.goaldigger-link,
+.deepfocus-link .info h1 {
+  font-size: 20px;
+}
+
+.deepfocus-link {
+  margin: 0 20px 80px;
+}
+.deepfocus-link .info {
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.1
+  ); /* Orange background with transparency */
+  border: 2px solid rgba(255, 165, 0, 0.8); /* Solid orange border */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.8), 0 0 30px rgba(255, 140, 0, 0.9); /* Orange glow effect */
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.goaldigger-link .info h1 {
+  font-size: 20px;
+}
+.GoalDigger {
+  margin: 0 20px 80px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.goal-news button {
+  justify-content: space-between;
+  display: flex;
+}
+.photogallery {
+  margin: 20px;
+}
+
+.photoalbum {
+  justify-content: center;
+  gap: 20px;
+}
+.photoalbum .col {
+  border: 3px solid gold;
+  padding: 5px;
+  background: #c4b454;
+  height: 140px;
+  width: 100%;
+}
+.photoalbum .col p {
+  font-size: 15px;
+  margin: 0;
+}
+.photoalbum .col ul {
+  margin: 5px 0 0;
+  text-aling: left;
+  padding-left: 10px;
+}
+.photoalbum .col ul li {
+  font-size: 10px;
+  text-align: left;
+}
+/* .photoalbum .col ul li:before {
+  content: "⚪";
+  font-size: 7px;
+  padding: -1px 3px 7px 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+} */
+.photoalbum .col img {
+  width: 100%;
+  margin: 0;
+}
+.ongoingcourses {
+  margin: 30px;
+}
+
+.ongoingcourses .classx .col {
+  background: white;
+  color: black;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.slider-container {
+  overflow: hidden;
+  margin: 70px 20px 20px;
+  position: relative;
+  cursor: grab;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider .col {
+  flex: 0 0 100%;
+  text-align: center;
+  font-size: 24px;
+  background: inherit;
+  padding: 0;
+}
+
+.slider-container .controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-container .controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.slider-container .controls button:hover {
+  background: #0056b3;
+}
+.slider-container .col div .slide-image {
+  width: 100%;
+  margin: 0;
+}
+.founder {
+  margin: 80px 20px;
+  justify-content: center;
+  gap: 50px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+.founder .img-container img {
+  width: 90px;
 }

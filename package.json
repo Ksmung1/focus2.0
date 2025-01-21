@@ -19,7 +19,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
-    "axios": "^1.5.1",
+    "axios": "^1.7.9",
     "date-fns": "^4.1.0",
     "firebase": "^11.1.0",
     "ionicons": "^7.1.2",
@@ -36,7 +36,6 @@
     "web-vitals": "^4.2.4",
     "webpack": "^5.97.1"
   },
-
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "start": "react-scripts start",
