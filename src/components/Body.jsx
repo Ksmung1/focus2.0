@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { SearchResults } from "./SearchBar/SearchResults";
-import HomepageShortCuts from "./HomePageShortCutsFolder/HomepageShortCuts";
 import { useNavigate } from "react-router-dom";
 import GoalDigger from "./GoalDigger";
 import PhotoGallery from "./PhotoGallery";
