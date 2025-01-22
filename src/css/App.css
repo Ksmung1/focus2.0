@@ -94,7 +94,7 @@ body {
   position: relative;
   flex: 1;
   text-align: center;
-  padding: 10px;
+  padding: 7px 5px;
   border: 2px solid #000;
   border-radius: 10px;
   cursor: pointer;
@@ -106,20 +106,10 @@ body {
 /* Neon glow effect for ongoing */
 .course-options .item.ongoing {
   /* animation: neon-green-border 2s linear infinite; */
-  background: #98fb98;
-}
-
-.course-options .item.ongoing::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border: 1px solid #00ff6a;
-  border-radius: 10px;
-  /* animation: glowing-green 2s linear infinite; */
-  pointer-events: none;
+  background: black;
+  color: white;
+  font-size: 11px;
+  border: 1px solid white;
 }
 
 /* Neon glow effect for coming soon */
@@ -338,12 +328,10 @@ body {
   font-size: 20px;
 }
 .GoalDigger {
-  margin: 0 20px 80px;
+  margin: 20px;
   border: 1px solid #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
-  max-height: 400px;
-  overflow: hidden;
   position: relative;
 }
 .goal-news button {
@@ -359,10 +347,10 @@ body {
   gap: 20px;
 }
 .photoalbum .col {
-  border: 3px solid gold;
-  padding: 5px;
-  background: #c4b454;
-  height: 140px;
+  border: 1px solid white;
+  padding: 10px;
+  background: #000;
+  height: 145px;
   width: 100%;
 }
 .photoalbum .col p {
@@ -400,6 +388,7 @@ body {
   padding: 20px;
   cursor: pointer;
   position: relative;
+  font-size: 13px;
 }
 .slider-container {
   overflow: hidden;
@@ -453,4 +442,25 @@ body {
 }
 .founder .img-container img {
   width: 90px;
+}
+
+.MonthView {
+  margin: 20px;
+}
+
+.type-effect {
+  height: 200vh;
+  background: #1f1f1f;
+  z-index: 100;
+  position: relative;
+  top: -200px;
+  left: 0;
+}
+.type-effect p {
+  position: relative;
+  top: 200px;
+  justify-content: center;
+  margin: 100px 30px;
+  padding: 100px 40px;
+  border: 1px solid white;
 }

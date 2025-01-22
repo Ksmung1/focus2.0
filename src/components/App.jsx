@@ -32,11 +32,14 @@ import CourseProgress from "./CoursePages/CourseProgress";
 import CourseSyllabus from "./CoursePages/CourseSyllabus";
 import CoursePattern from "./CoursePages/CoursePattern";
 import GoalDigger from "./GoalDigger";
+import GoalDiggerPage from "./GoalDiggerPage";
+import MonthView from "./MonthView";
 
 //css
 import "../css/App.css";
 import "../css/props.css";
 import OngoingCourses from "./OngoingCourses";
+import ArticleCalendar from "./ArticleCalendar";
 
 function App() {
           return (
@@ -79,6 +82,10 @@ function App() {
         <Route path="/classxii" element={<OngoingCourses/>}></Route>
         <Route path="/neet" element={<OngoingCourses/>}></Route>
         <Route path="/defencecourse" element={<OngoingCourses/>}></Route>
+        <Route path="/goal-digger/article" element={<GoalDiggerPage />} />
+        <Route path="/goal-digger/month" element={<MonthView />} />
+        <Route path="/calendar" element={<ArticleCalendar />} />
+  
 
 
                     </Routes>

@@ -22,7 +22,7 @@ function HomepageShortCuts() {
                     <div className="homepage-shortcut">
 
 
-                              <div class="cards-container" style={{ display: 'none' }}>
+                              <div className="cards-container" style={{ display: 'none' }}>
                                         {cardData.map((card, index) => (
                                                   <div key={index} className="card-wrappers">
                                                             <Card
