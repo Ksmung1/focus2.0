@@ -52,7 +52,7 @@ const OngoingCourses = () => {
          <div className="col">40 Days Exam Booster Course
          <span  className='status-badge ongoing-badge'>Ongoing</span>
          </div>
-         <div className="col">Class X Booster Course
+         <div className="col">NEET Masterclass
          <span  className='status-badge coming-soon-badge'>Coming soon</span>
          </div>
        </div>
