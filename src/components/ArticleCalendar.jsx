@@ -1,46 +1,46 @@
 import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import "../css/CalendarStyle.css"; // Add custom styling if needed
+import "../css/CalendarStyle.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-// Helper function to normalize date to "YYYY-MM-DD" format (ignores time)
+// Normalize Date to YYYY-MM-DD without time zone conversion
 const normalizeDate = (date) => {
-  const newDate = new Date(date);
-  
-  // Check if the date is valid
-  if (isNaN(newDate.getTime())) {
-    console.error("Invalid date:", date); // Log invalid date for debugging
-    return null; // Return null for invalid dates
-  }
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Get month, zero-padded
+  const day = String(date.getDate()).padStart(2, '0'); // Get day, zero-padded
 
-  newDate.setHours(0, 0, 0, 0); // Set time to midnight to avoid timezone issues
-  return newDate.toISOString().split('T')[0]; // Return just the "YYYY-MM-DD" part
+  return `${year}-${month}-${day}`; // Return formatted date: YYYY-MM-DD
 };
 
 const ArticleCalendar = () => {
+  const navigate = useNavigate();
   const [date, setDate] = useState(new Date());
-  const [articles, setArticles] = useState({}); // Store articles by date
+  const [articles, setArticles] = useState({});
 
-  const formattedDate = normalizeDate(date); // Normalize current selected date
+  // Handle day click to navigate to the article for that date
+  const handleDateClick = (date) => {
+    const formattedDate = normalizeDate(date);
+    const article = articles[formattedDate];  // Get the article for that day
+    
+    if (article) {
+      // Pass the full article object to the ArticlePage component
+      navigate('/articles', { state: { article } });
+    } 
+  };
+
 
   useEffect(() => {
     axios.get('http://localhost:5000/focus/articles')
       .then((res) => {
-        console.log("Fetched Articles:", res.data);
-
-        // Format articles by date (use 'publishedAt' date)
         const articlesByDate = res.data.reduce((acc, article) => {
-          const articleDate = normalizeDate(article.publishedAt); // Normalize article published date (ignores time)
-          
-          // Only add valid articles
+          const articleDate = normalizeDate(new Date(article.publishedAt));
           if (articleDate) {
-            acc[articleDate] = article.content; // Assuming article.content holds the article text
+            acc[articleDate] = article;  // Store the entire article object
           }
-          
           return acc;
         }, {});
-
         setArticles(articlesByDate);
       })
       .catch((error) => {
@@ -52,20 +52,15 @@ const ArticleCalendar = () => {
     <div className="calendar-container">
       <h1 style={{ color: "#fe5a1d" }}>Article Calendar</h1>
       <Calendar
-        showNeighboringMonth={false} 
+        showNeighboringMonth={false}
         onChange={setDate}
         value={date}
         tileContent={({ date }) => {
-          const key = normalizeDate(date); // Normalize the calendar date (ignores time)
-          return articles[key] ? <span className="dot">•</span> : null; // If article exists for that day, show dot
+          const key = normalizeDate(date);
+          return articles[key] ? <span className="dot">•</span> : null;
         }}
+        onClickDay={handleDateClick}
       />
-      <div className="article-display">
-        <h2 style={{ color: "white" }}>
-          {/* Display the article for the normalized selected date */}
-          {articles[formattedDate] ? articles[formattedDate] : "No article available for this date."}
-        </h2>
-      </div>
     </div>
   );
 };

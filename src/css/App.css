@@ -464,3 +464,9 @@ body {
   padding: 100px 40px;
   border: 1px solid white;
 }
+.postContent {
+  padding: 5px;
+}
+.postContent img {
+  width: 90%;
+}

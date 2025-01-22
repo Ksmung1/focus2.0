@@ -34,12 +34,13 @@ import CoursePattern from "./CoursePages/CoursePattern";
 import GoalDigger from "./GoalDigger";
 import GoalDiggerPage from "./GoalDiggerPage";
 import MonthView from "./MonthView";
-
+import ArticlePage from "./ArticlePage";
 //css
 import "../css/App.css";
 import "../css/props.css";
 import OngoingCourses from "./OngoingCourses";
 import ArticleCalendar from "./ArticleCalendar";
+import Poster from "./Poster";
 
 function App() {
           return (
@@ -49,7 +50,7 @@ function App() {
         <Route path="/physics" element={<FOUR_OU_FOUR />} />
         <Route path="/" element={<><Navbar /><Body/></>} />
         <Route path="/exams" element={<Exams />} />
-        <Route path="/articles/:articleName" element={<ArticleCard />} />
+        {/* <Route path="/articles/:articleName" element={<ArticleCard />} /> */}
         <Route path="/all-articles" element={<AllArticles />} />
         <Route path="/currentAffairs" element={<CA />} />
         <Route path="/rhauIAS" element={<CurrentAffairs />} />
@@ -85,6 +86,9 @@ function App() {
         <Route path="/goal-digger/article" element={<GoalDiggerPage />} />
         <Route path="/goal-digger/month" element={<MonthView />} />
         <Route path="/calendar" element={<ArticleCalendar />} />
+        <Route path="/secret" element={<Poster />} />
+        <Route path="/articles" element={<ArticlePage />} />
+
   
 
 
