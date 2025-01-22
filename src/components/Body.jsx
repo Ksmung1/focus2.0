@@ -33,6 +33,7 @@ function Body() {
             src={`${process.env.PUBLIC_URL}/images/target.gif`}
             alt="target"
             style={{ margin: "80px 0 0 0" }}
+            onClick={()=>{navigate('/secret')}}
           />
           <h1
             style={{
