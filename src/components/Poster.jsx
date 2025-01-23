@@ -29,7 +29,6 @@ const Poster = () => {
         setMessage('Post submitted successfully');
         setTitle('');
         setContent('');
-        setImages([]);
       }
     } catch (error) {
       setMessage('Failed to submit post. Please try again.');
