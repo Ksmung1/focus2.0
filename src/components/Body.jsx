@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { SearchResults } from "./SearchBar/SearchResults";
-import { useNavigate } from "react-router-dom";
 import GoalDigger from "./GoalDigger";
 import PhotoGallery from "./PhotoGallery";
 import Slider from "./Slider";
@@ -13,6 +13,8 @@ function Body() {
   const navigate = useNavigate();
   const [results, setResults] = useState([]);
   const [active, setActive] = useState(false);
+  //eslint-disable-next-line
+  const [clickCount, setClickCount] = useState(0);
 
   // Effect to show Typewriter first, then main content after 5 seconds
   useEffect(() => {
@@ -23,6 +25,17 @@ function Body() {
     return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
 
+  // Handle the click event for the image
+  const handleImageClick = () => {
+    setClickCount(prevCount => {
+      if (prevCount + 1 === 4) {
+        navigate('/secret');
+        return 0;  // Reset count after navigating
+      }
+      return prevCount + 1;
+    });
+  };
+
   return (
     <div className="Body">
       {!active ? (
@@ -32,8 +45,8 @@ function Body() {
           <img
             src={`${process.env.PUBLIC_URL}/images/target.gif`}
             alt="target"
-            style={{ margin: "80px 0 0 0" }}
-            onClick={()=>{navigate('/secret')}}
+            style={{ margin: "80px 0 0 0", cursor: "pointer" }}
+            onClick={handleImageClick}
           />
           <h1
             style={{
@@ -56,8 +69,7 @@ function Body() {
           >
             Next Generation
           </p>
-          <div style={{ color: "#fff", textAlign: "left", padding: "20px" }}></div>
-          
+
           <div className="search-bar-container">
             <SearchBar setResults={setResults} />
             <SearchResults results={results} />
@@ -82,7 +94,7 @@ function Body() {
           </div>
 
           <PhotoGallery />
-          <ArticleCalendar></ArticleCalendar>
+          <ArticleCalendar />
           <Slider />
           <GoalDigger maxHeight="350px" overflow="hidden" margin="70px 20px" />
 
