@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { SearchResults } from "./SearchBar/SearchResults";
-import GoalDigger from "./GoalDigger";
 import PhotoGallery from "./PhotoGallery";
 import Slider from "./Slider";
 import Founder from "./Founder";
@@ -96,7 +95,7 @@ function Body() {
           <PhotoGallery />
           <ArticleCalendar />
           <Slider />
-          <GoalDigger maxHeight="350px" overflow="hidden" margin="70px 20px" />
+          {/* <GoalDigger maxHeight="350px" overflow="hidden" margin="70px 20px" /> */}
 
           <div className="educafe-link">
             <div className="info">

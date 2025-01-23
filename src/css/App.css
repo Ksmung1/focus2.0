@@ -392,7 +392,7 @@ body {
 }
 .slider-container {
   overflow: hidden;
-  margin: 70px 20px 20px;
+  margin: 80px 20px 100px;
   position: relative;
   cursor: grab;
 }

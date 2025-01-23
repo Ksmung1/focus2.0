@@ -28,7 +28,15 @@ const ArticlePage = () => {
   return (
     <div style={{ margin: '20px' }}>
       <h1 className='mid' style={{fontSize: '2rem'}}>{article.title}</h1>
-      <p className='mid'><strong>Published on:</strong> {article.publishedAt}</p>
+      <p className='mid'>
+  <strong>
+    {new Date(article.publishedAt).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })}
+  </strong>
+</p>
       <div className='postContent' dangerouslySetInnerHTML={{ __html: article.content }} />
       <button onClick={() => navigate(-1)} style={backButtonStyle}>⬅ Back</button>
     </div>

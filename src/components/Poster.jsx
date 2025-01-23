@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
 const Poster = () => {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState('Current Affairs - FOCUS');
   const [content, setContent] = useState('');
   const [date, setDate] = useState(() => {
     const today = new Date().toISOString().split('T')[0];

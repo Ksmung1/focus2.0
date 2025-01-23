@@ -41,7 +41,7 @@ const GoalDigger = ({ maxHeight = 'auto', overflow = 'visible', margin = '20px' 
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/focus/articles')
+    axios.get('https://focus-backend-xxar.onrender.com/focus/articles')
       .then((res) => {
         console.log("Fetched Articles:", res.data);
         setArticles(res.data);
