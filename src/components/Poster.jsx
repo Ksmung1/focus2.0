@@ -19,7 +19,7 @@ const Poster = () => {
 
     try {
 
-      const response = await axios.post("https://focus-backend-xxar.onrender.com/focuss/articles", {
+      const response = await axios.post("https://focus-backend-xxar.onrender.com/focus/articles", {
         title,
         content,
         publishedAt: date,

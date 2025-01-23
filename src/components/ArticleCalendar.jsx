@@ -32,7 +32,7 @@ const ArticleCalendar = () => {
 
 
   useEffect(() => {
-    axios.get('http://localhost:5000/focus/articles')
+    axios.get('https://focus-backend-xxar.onrender.com/focus/articles')
       .then((res) => {
         const articlesByDate = res.data.reduce((acc, article) => {
           const articleDate = normalizeDate(new Date(article.publishedAt));
