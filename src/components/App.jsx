@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 import Body from "./Body"
 import FOUR_OU_FOUR from './FOUR_OU_FOUR';
 import Exams from "./Exams";
-import ArticleCard from './Articles/Card';
 import CurrentAffairs from './CurrentAffairs/CurrentAffairs';
 import CurrentMonthAffairs from './CurrentAffairs/CurrentMonthAffairs';
 import Magazines from './Magazines/Magazines';

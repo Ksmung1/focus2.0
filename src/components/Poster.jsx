@@ -11,7 +11,6 @@ const Poster = () => {
     return today;
   });
   const [message, setMessage] = useState('');
-  const [images, setImages] = useState([]);
 
 
   // Handle form submission
