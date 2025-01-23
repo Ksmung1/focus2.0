@@ -19,7 +19,7 @@ const Poster = () => {
 
     try {
 
-      const response = await axios.post('http://localhost:5000/focus/articles', {
+      const response = await axios.post("https://focus-backend-xxar.onrender.com/focuss/articles", {
         title,
         content,
         publishedAt: date,
