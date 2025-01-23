@@ -449,12 +449,13 @@ body {
 }
 
 .type-effect {
-  height: 200vh;
+  height: 100vh;
   background: #1f1f1f;
   z-index: 100;
   position: relative;
   top: -200px;
   left: 0;
+  overflow: hidden;
 }
 .type-effect p {
   position: relative;

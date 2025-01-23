@@ -5,12 +5,19 @@ const TypingEffect = () => {
   const [showSecondText, setShowSecondText] = useState(false);
 
   useEffect(() => {
+    // Disable scrolling when the component is mounted
+    document.body.style.overflow = 'hidden';
+
     // Set a timer to switch to the second paragraph after the first completes
     const timer = setTimeout(() => {
       setShowSecondText(true);
-    }, 3000); // Adjust time based on typewriter speed (7 seconds as an example)
+    }, 3000); // Adjust time based on typewriter speed
 
-    return () => clearTimeout(timer); // Cleanup timer when component unmounts
+    // Cleanup function to re-enable scrolling when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -32,8 +39,7 @@ const TypingEffect = () => {
           <Typewriter
             options={{
               strings: [
-                `Systematize your exam preparations, Learn new tips and tricks and Boost your productivity.
-                `
+                `Systematize your exam preparations, Learn new tips and tricks and Boost your productivity.`
               ],
               autoStart: true,
               loop: false,

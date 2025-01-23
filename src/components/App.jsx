@@ -40,10 +40,15 @@ import "../css/props.css";
 import OngoingCourses from "./OngoingCourses";
 import ArticleCalendar from "./ArticleCalendar";
 import Poster from "./Poster";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
+
+
+
           return (
                   <Router>
+                    <ScrollToTop/>
                     <Routes>
                     <Route path="*" element={<FOUR_OU_FOUR />} />
         <Route path="/physics" element={<FOUR_OU_FOUR />} />

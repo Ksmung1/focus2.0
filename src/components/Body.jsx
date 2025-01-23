@@ -15,30 +15,55 @@ function Body() {
   //eslint-disable-next-line
   const [clickCount, setClickCount] = useState(0);
 
-  // Effect to show Typewriter first, then main content after 5 seconds
+  // Effect to show Typewriter first, then main content after 6 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      setActive(true);  // Show the main content after 5 seconds
+      setActive(true);
     }, 6000);
 
-    return () => clearTimeout(timer); // Cleanup on unmount
+    return () => clearTimeout(timer);
   }, []);
 
   // Handle the click event for the image
   const handleImageClick = () => {
-    setClickCount(prevCount => {
+    setClickCount((prevCount) => {
       if (prevCount + 1 === 4) {
-        navigate('/secret');
-        return 0;  // Reset count after navigating
+        navigate("/secret");
+        return 0; // Reset count after navigating
       }
       return prevCount + 1;
     });
   };
 
+  // Function to skip typewriter animation
+  const handleSkip = () => {
+    setActive(true);
+  };
+
   return (
     <div className="Body">
       {!active ? (
-        <Typewriter />
+        <>
+          <Typewriter />
+          <button
+            onClick={handleSkip}
+            style={{
+              position: "absolute",
+              bottom: "50px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              padding: "10px ",
+              fontSize: "16px",
+              backgroundColor: "#fff",
+              color: "black",
+              border: "none",
+              borderRadius: "1px",
+              cursor: "pointer",
+            }}
+          >
+            Skip
+          </button>
+        </>
       ) : (
         <>
           <img
@@ -95,7 +120,6 @@ function Body() {
           <PhotoGallery />
           <ArticleCalendar />
           <Slider />
-          {/* <GoalDigger maxHeight="350px" overflow="hidden" margin="70px 20px" /> */}
 
           <div className="educafe-link">
             <div className="info">
